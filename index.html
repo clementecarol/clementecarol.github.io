@@ -5,50 +5,47 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Caroline's Personal Site</title>
-  <!-- CSS -->
-  <link rel="stylesheet" href="./css/style.css">
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Alice&family=El+Messiri:wght@500;600&display=swap"
-    rel="stylesheet">
+  <link rel="stylesheet" href="tailwind.css">
   <!-- Icons -->
   <script src="https://kit.fontawesome.com/d2c9ac8eea.js" crossorigin="anonymous"></script>
 
 </head>
 
 <body>
-  <main>
-    <header>
-      <nav class="main-nav">
-        <ul class="main-nav__items">
-          <li class="main-nav__item">
-            <a href="hobbies.html">My hobbies</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="contact.html">Contact</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="header__container">
-        <div class="header__img">
-          <img
-            src="https://2.bp.blogspot.com/-uLaVDSqnnzI/X8AGrrM5FeI/AAAAAAAAwkQ/f_PL1KbAGl0X5CThq1Y4I3FRaxtVaWyXgCK4BGAYYCw/s120-pf/bl.jpg"
-            alt="caroline's profile picture" />
-        </div>
-        <div class="header__info">
-          <h1>Caroline Clemente Pinto</h1>
-          <p><em>Student.</em></p>
-          <p>
-            I am 23 years old and I am currently living in Belgium. I love
-            traveling and learning new languages.
-          </p>
-        </div>
+  <header>
+    <nav>
+      <ul class="flex flex-row border-b mb-5">
+        <li class="text-green-500 px-5">
+          <a href="hobbies.html">My hobbies</a>
+        </li>
+        <li class="text-green-500 px-5">
+          <a href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="m-auto w-4/5">
 
+    <div>
+      <div>
+        <img
+          src="https://2.bp.blogspot.com/-uLaVDSqnnzI/X8AGrrM5FeI/AAAAAAAAwkQ/f_PL1KbAGl0X5CThq1Y4I3FRaxtVaWyXgCK4BGAYYCw/s120-pf/bl.jpg"
+          alt="caroline's profile picture" />
       </div>
-    </header>
+      <div>
+        <h1 class="text-3xl">Caroline Clemente Pinto</h1>
+        <p><em>Student.</em></p>
+        <p>
+          I am 23 years old and I am currently living in Belgium. I love
+          traveling and learning new languages.
+        </p>
+      </div>
+
+    </div>
+
     <hr>
-    <section class="education">
-      <h2>Education</h2>
+    <section>
+      <h2 class="text-2xl font-semibold text-green-300 mb-5">Education</h2>
       <ul>
         <li>
           <a href="http://www.auxiliadora.net/">Colégio Maria Auxiliadora</a> -
@@ -61,14 +58,14 @@
       </ul>
     </section>
     <hr>
-    <section class="work-exp">
-      <h2>Work Experience</h2>
-      <div class="work-exp__container">
-        <div class="work-exp__dates">
+    <section>
+      <h2 class="text-2xl font-semibold text-green-300 mb-5">Work Experience</h2>
+      <div>
+        <div>
           <p>2017-2019</p>
           <p>2019</p>
         </div>
-        <div class="work-exp__work">
+        <div>
           <p>English teacher (Languages Without Borders - UFRGS)</p>
           <p>English teacher at CNA</p>
         </div>
@@ -76,18 +73,25 @@
 
     </section>
     <hr>
-    <section class="skills">
-      <h2>Skills</h2>
-      <div class="skills__container flex-row">
-        <div class="skills__names flex-col">
+    <section>
+      <h2 class="text-2xl font-semibold text-green-300 mb-5">Skills</h2>
+      <div>
+        <div>
           <p>Teaching</p>
           <p>Portuguese</p>
           <p>English</p>
           <p>French</p>
 
         </div>
-        <div class="skills__stars flex-col">
-          <div class="flex-row">
+        <div>
+          <div>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <div>
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -99,15 +103,8 @@
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
           </div>
-          <div class="flex-row">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-          </div>
-          <div class="flex-row">
+          <div>
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
           </div>
