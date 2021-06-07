@@ -13,12 +13,25 @@
 
 <body class="bg-gray-100">
   <header>
-    <nav>
-      <ul class="flex flex-row border-b mb-5">
-        <li class="text-green-500 px-5">
-          <a class="font-semibold" href="hobbies.html">My hobbies</a>
+    <nav class="mx-auto max-w-xl bg-gray-300">
+      <ul class="flex justify-center flex-row border-b mb-5">
+        <li class="flex flex-row text-indigo-700 px-5">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+          </svg>
+          <a class="font-semibold" href="education.html">Education</a>
         </li>
-        <li class="text-green-500 px-5">
+        <li class="text-indigo-700 px-5">
+          <a class="font-semibold" href="work-experience.html">Work Experience</a>
+        </li>
+        <li class="text-indigo-700 px-5">
+          <a class="font-semibold" href="skills.html">Skills</a>
+        </li>
+        <li class="text-indigo-700 px-5">
+          <a class="font-semibold" href="hobbies.html">Hobbies</a>
+        </li>
+        <li class="text-indigo-700 px-5">
           <a class="font-semibold" href="contact.html">Contact</a>
         </li>
       </ul>
@@ -26,49 +39,50 @@
   </header>
   <main class="m-auto w-4/5">
 
-    <div>
+    <section class="p-5 mx-auto w-xl bg-gray-600">
       <div>
-        <img class="mb-3 rounded-lg shadow-lg"
+        <img class="mb-1 rounded-lg shadow-lg"
           src="https://2.bp.blogspot.com/-uLaVDSqnnzI/X8AGrrM5FeI/AAAAAAAAwkQ/f_PL1KbAGl0X5CThq1Y4I3FRaxtVaWyXgCK4BGAYYCw/s120-pf/bl.jpg"
           alt="caroline's profile picture" />
       </div>
-      <div>
-        <h1 class="text-2xl text-gray-900 font-semibold">Caroline Clemente Pinto</h1>
-        <p class="text-gray-900"><em>Student.</em></p>
-        <p class="text-gray-900">
-          It's nice to see you here on my website! My name is Caroline and, although I am a student in Belgium, I am
+      <div class="py-2 mx-auto max-w-xl">
+        <h1 class="py-2 text-indigo-700 font-semibold text-4xl">Caroline Clemente Pinto</h1>
+        <p class="py-1 text-gray-900 text-2xl"><em>Student.</em></p>
+        <p class="py-2 text-gray-900 text-2xl">
+          It's nice to see you here on my website!
+          <br class="md:hidden">
+          I am a student in Belgium, however I am
           originally from Brazil. I created this website/CV to practice my recent acquired programming skills! Feel free
           to contact me.
         </p>
       </div>
 
-    </div>
-
-    <hr>
+    </section>
     <section>
-      <h2 class="text-2xl font-semibold text-green-500 mt-2 mb-5">Education</h2>
+      <h2 class="text-2xl font-semibold text-indigo-700 mt-2 mb-5">Education</h2>
       <ul>
         <li>
-          <a class="text-green-300" href="http://www.auxiliadora.net/">Colégio Maria Auxiliadora</a> -
+          <a class="text-gray-700 underline" href="http://www.auxiliadora.net/">Colégio Maria Auxiliadora</a> -
           Primary and Secondary education;
         </li>
         <li>
           Language and Teaching (Portuguese and English) -
-          <a class="text-green-300" href="http://www.ufrgs.br/english/home">Federal University of
+          <a class="text-gray-700 underline" href="http://www.ufrgs.br/english/home">Federal University of
             Rio Grande do Sul</a>;
-
         </li>
+        <!-- <li>
+          <a href="https://www.odisee.be/en"></a>
+        </li> -->
       </ul>
     </section>
-    <hr>
     <section>
-      <h2 class="text-2xl font-semibold text-green-500 mt-2 mb-5">Work Experience</h2>
+      <h2 class="text-2xl font-semibold text-indigo-700 mt-2 mb-5">Work Experience</h2>
       <div>
         <div class="grid grid-cols-2">
           <p>2017-2019</p>
           <div>
             <p>English teacher (Languages Without Borders -
-              <a class="text-green-300" href="http://www.ufrgs.br/english/home">UFRGS</a>)</p>
+              <a class="text-gray-700 underline" href="http://www.ufrgs.br/english/home">UFRGS</a>)</p>
           </div>
         </div>
         <br>
@@ -81,13 +95,12 @@
       </div>
 
     </section>
-    <hr>
     <section>
-      <h2 class="text-2xl font-semibold text-green-500 mt-2 mb-5">Skills</h2>
+      <h2 class="text-2xl font-semibold text-indigo-700 mt-2 mb-5">Skills</h2>
       <div>
         <div>
           <p>Teaching</p>
-          <p class="text-green-300">Languages spoken (pop up?)</p>
+          <p class="text-gray-700 underline">Languages spoken (pop up?)</p>
           <p>Programming</p>
           <p></p>
 
