@@ -1,112 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Caroline's Personal Site</title>
+        <link rel="stylesheet" href="tailwind.css" />
+        <!-- Icons -->
+        <script
+            src="https://kit.fontawesome.com/d2c9ac8eea.js"
+            crossorigin="anonymous"
+        ></script>
+    </head>
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Caroline's Personal Site</title>
-  <link rel="stylesheet" href="tailwind.css">
-  <!-- Icons -->
-  <script src="https://kit.fontawesome.com/d2c9ac8eea.js" crossorigin="anonymous"></script>
-
-</head>
-
-<body class="bg-gray-100">
-  <header>
-    <nav class="mx-auto max-w-xl bg-gray-300">
-      <ul class="flex justify-center flex-row border-b mb-5">
-        <li class="flex flex-row text-indigo-700 px-5">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-          </svg>
-          <a class="font-semibold" href="education.html">Education</a>
-        </li>
-        <li class="text-indigo-700 px-5">
-          <a class="font-semibold" href="work-experience.html">Work Experience</a>
-        </li>
-        <li class="text-indigo-700 px-5">
-          <a class="font-semibold" href="skills.html">Skills</a>
-        </li>
-        <li class="text-indigo-700 px-5">
-          <a class="font-semibold" href="hobbies.html">Hobbies</a>
-        </li>
-        <li class="text-indigo-700 px-5">
-          <a class="font-semibold" href="contact.html">Contact</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-  <main class="m-auto w-4/5">
-
-    <section class="p-5 mx-auto w-xl bg-gray-600">
-      <div>
-        <img class="mb-1 rounded-lg shadow-lg"
-          src="https://2.bp.blogspot.com/-uLaVDSqnnzI/X8AGrrM5FeI/AAAAAAAAwkQ/f_PL1KbAGl0X5CThq1Y4I3FRaxtVaWyXgCK4BGAYYCw/s120-pf/bl.jpg"
-          alt="caroline's profile picture" />
-      </div>
-      <div class="py-2 mx-auto max-w-xl">
-        <h1 class="py-2 text-indigo-700 font-semibold text-4xl">Caroline Clemente Pinto</h1>
-        <p class="py-1 text-gray-900 text-2xl"><em>Student.</em></p>
-        <p class="py-2 text-gray-900 text-2xl">
-          It's nice to see you here on my website!
-          <br class="md:hidden">
-          I am a student in Belgium, however I am
-          originally from Brazil. I created this website/CV to practice my recent acquired programming skills! Feel free
-          to contact me.
-        </p>
-      </div>
-
-    </section>
-    <section>
-      <h2 class="text-2xl font-semibold text-indigo-700 mt-2 mb-5">Education</h2>
-      <ul>
-        <li>
-          <a class="text-gray-700 underline" href="http://www.auxiliadora.net/">Colégio Maria Auxiliadora</a> -
-          Primary and Secondary education;
-        </li>
-        <li>
-          Language and Teaching (Portuguese and English) -
-          <a class="text-gray-700 underline" href="http://www.ufrgs.br/english/home">Federal University of
-            Rio Grande do Sul</a>;
-        </li>
-        <!-- <li>
+    <body class="bg-gray-100">
+        <header>
+            <nav class="hidden sm:block mx-auto max-w-xl bg-gray-200">
+                <ul class="flex justify-center flex-row border-b mb-5">
+                    <li class="flex flex-row text-indigo-700 px-5">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-6 w-6"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                            />
+                        </svg>
+                        <a class="font-semibold" href="education.html"
+                            >Education</a
+                        >
+                    </li>
+                    <li class="text-indigo-700 px-5">
+                        <a class="font-semibold" href="work-experience.html"
+                            >Work Experience</a
+                        >
+                    </li>
+                    <li class="text-indigo-700 px-5">
+                        <a class="font-semibold" href="skills.html">Skills</a>
+                    </li>
+                    <li class="text-indigo-700 px-5">
+                        <a class="font-semibold" href="hobbies.html">Hobbies</a>
+                    </li>
+                    <li class="text-indigo-700 px-5">
+                        <a class="font-semibold" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="sm:m-auto sm:w-4/5">
+            <section
+                id="intro"
+                class="h-screen p-5 sm:mx-auto w-xl bg-gray-200"
+            >
+                <div>
+                    <img
+                        class="mb-1 rounded-lg shadow-lg"
+                        src="https://2.bp.blogspot.com/-uLaVDSqnnzI/X8AGrrM5FeI/AAAAAAAAwkQ/f_PL1KbAGl0X5CThq1Y4I3FRaxtVaWyXgCK4BGAYYCw/s120-pf/bl.jpg"
+                        alt="caroline's profile picture"
+                    />
+                </div>
+                <div class="py-2 mx-auto w-">
+                    <h1
+                        class="
+                            py-2
+                            text-2xl text-indigo-700
+                            font-semibold
+                            sm:text-4xl
+                        "
+                        >Caroline Clemente Pinto</h1
+                    >
+                    <p class="py-1 text-gray-900 sm:text-2xl"
+                        ><em>Student.</em></p
+                    >
+                    <p class="py-2 text-gray-900 sm:text-2xl">
+                        It's nice to see you here on my website!
+                        <br class="md:hidden" />
+                        I am a student in Belgium, however I am originally from
+                        Brazil. I created this website/CV to practice my recent
+                        acquired programming skills!
+                        <br />
+                        Feel free to contact me.
+                    </p>
+                    <div class="mx-auto w-auto mt-16">
+                        <p
+                            class="
+                                mx-auto
+                                w-full
+                                text-center text-xs
+                                uppercase
+                                font-semibold
+                            "
+                            >Scroll down to see my education</p
+                        >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="mx-auto h-5 w-5"
+                            viewBox="0 0 20 20"
+                            fill="currentColor"
+                        >
+                            <path
+                                fill-rule="evenodd"
+                                d="M15.707 4.293a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-5-5a1 1 0 011.414-1.414L10 8.586l4.293-4.293a1 1 0 011.414 0zm0 6a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-5-5a1 1 0 111.414-1.414L10 14.586l4.293-4.293a1 1 0 011.414 0z"
+                                clip-rule="evenodd"
+                            />
+                        </svg>
+                    </div>
+                </div>
+            </section>
+            <section id="education" class="p-5 bg-green-200">
+                <h2 class="text-2xl font-semibold text-indigo-700"
+                    >Education</h2
+                >
+                <ul>
+                    <li>
+                        <a
+                            class="text-gray-700 underline"
+                            href="http://www.auxiliadora.net/"
+                            >Colégio Maria Auxiliadora</a
+                        >
+                        - Primary and Secondary education;
+                    </li>
+                    <li>
+                        Language and Teaching (Portuguese and English) -
+                        <a
+                            class="text-gray-700 underline"
+                            href="http://www.ufrgs.br/english/home"
+                            >Federal University of Rio Grande do Sul</a
+                        >;
+                    </li>
+                    <!-- <li>
           <a href="https://www.odisee.be/en"></a>
         </li> -->
-      </ul>
-    </section>
-    <section>
-      <h2 class="text-2xl font-semibold text-indigo-700 mt-2 mb-5">Work Experience</h2>
-      <div>
-        <div class="grid grid-cols-2">
-          <p>2017-2019</p>
-          <div>
-            <p>English teacher (Languages Without Borders -
-              <a class="text-gray-700 underline" href="http://www.ufrgs.br/english/home">UFRGS</a>)</p>
-          </div>
-        </div>
-        <br>
-        <div class="grid grid-cols-2">
-          <p>2020-2021</p>
-          <div>
-            <p>Au Pair in Belgium</p>
-          </div>
-        </div>
-      </div>
-
-    </section>
-    <section>
-      <h2 class="text-2xl font-semibold text-indigo-700 mt-2 mb-5">Skills</h2>
-      <div>
-        <div>
-          <p>Teaching</p>
-          <p class="text-gray-700 underline">Languages spoken (pop up?)</p>
-          <p>Programming</p>
-          <p></p>
-
-        </div>
-        <div>
-          <!-- <div>
+                </ul>
+            </section>
+            <section id="work-experience" class="p-5">
+                <h2 class="text-2xl font-semibold text-indigo-700"
+                    >Work Experience</h2
+                >
+                <div>
+                    <div class="grid grid-cols-2">
+                        <p>2017-2019</p>
+                        <div>
+                            <p
+                                >English teacher (Languages Without Borders -
+                                <a
+                                    class="text-gray-700 underline"
+                                    href="http://www.ufrgs.br/english/home"
+                                    >UFRGS</a
+                                >)</p
+                            >
+                        </div>
+                    </div>
+                    <br />
+                    <div class="grid grid-cols-2">
+                        <p>2020-2021</p>
+                        <div>
+                            <p>Au Pair in Belgium</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="skills" class="p-5">
+                <h2 class="text-2xl font-semibold text-indigo-700">Skills</h2>
+                <div>
+                    <div>
+                        <p>Teaching</p>
+                        <p class="text-gray-700 underline"
+                            >Languages spoken (pop up?)</p
+                        >
+                        <p>Programming</p>
+                        <p></p>
+                    </div>
+                    <div>
+                        <!-- <div>
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -130,12 +201,9 @@
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
           </div> -->
-        </div>
-      </div>
-    </section>
-  </main>
-
-
-</body>
-
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
 </html>
